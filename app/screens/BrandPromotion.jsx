@@ -7,6 +7,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const BrandPromotion = () => {
   const { colors } = useTheme();
+  const navigation = useNavigation();
   return (
     <SafeAreaView
       style={{
@@ -16,11 +17,8 @@ const BrandPromotion = () => {
         justifyContent: "center",
       }}
     >
-      <CustomButton
-        value={"Event and Promotion"}
-        color={colors.background}
-      />
-      <CustomButton value={"Go Premium"} color={colors.background} />
+      <CustomButton value={"Brand promotion"} color={colors.background} />
+      <CustomButton value={"Event organising"} color={colors.background} />
     </SafeAreaView>
   );
 };
