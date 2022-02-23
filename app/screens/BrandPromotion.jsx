@@ -17,8 +17,16 @@ const BrandPromotion = () => {
         justifyContent: "center",
       }}
     >
-      <CustomButton value={"Brand promotion"} color={colors.background} />
-      <CustomButton value={"Event organising"} color={colors.background} />
+      <CustomButton
+        value={"Brand promotion"}
+        onClick={() => navigation.navigate("brandPromotion")}
+        color={colors.background}
+      />
+      <CustomButton
+        value={"Event organising"}
+        onClick={() => navigation.navigate("event")}
+        color={colors.background}
+      />
     </SafeAreaView>
   );
 };
