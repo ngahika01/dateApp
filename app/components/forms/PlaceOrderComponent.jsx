@@ -1,19 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Card } from 'react-native-paper'
+import { StyleSheet } from "react-native";
+import React from "react";
+import { Card, Paragraph, Title } from "react-native-paper";
 
-const PlaceOrderComponent = ({item}) => {
+const PlaceOrderComponent = ({ listing }) => {
   return (
     <>
-    <Card>
-        
-    </Card>
-
-
+      <Card>
+        <Card.Content>
+          <Title>{listing.name}</Title>
+          <Paragraph>{listing.price}</Paragraph>
+          <Paragraph>4 seater vehicle</Paragraph>
+        </Card.Content>
+      </Card>
     </>
-  )
-}
+  );
+};
 
-export default PlaceOrderComponent
+export default PlaceOrderComponent;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

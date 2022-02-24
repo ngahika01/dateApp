@@ -9,6 +9,7 @@ import EventOrganising from "../screens/events/EventOrganising";
 import BrandPromotionScreen from "../screens/brands/BrandPromotionScreen";
 import RoadTripVehiclesScreen from "../screens/vehicles/RoadTripVehiclesScreen";
 import VehicleDetailsScreen from "../screens/vehicles/VehicleDetailsScreen";
+import PlaceOrderScreen from "../screens/order/PlaceOrderScreen";
 
 const Stack = createNativeStackNavigator();
 const FeedNavigator = () => {
@@ -35,6 +36,11 @@ const FeedNavigator = () => {
           name="VehicleDetails"
           options={{ headerShown: false }}
           component={VehicleDetailsScreen}
+        />
+        <Stack.Screen
+          name="placeorder"
+          options={{ headerShown: false }}
+          component={PlaceOrderScreen}
         />
         <Stack.Screen
           name="brandPromotion"
