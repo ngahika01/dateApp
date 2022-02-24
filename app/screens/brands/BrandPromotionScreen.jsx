@@ -4,9 +4,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Appbar, useTheme } from "react-native-paper";
 import TextInputComponent from "../../components/forms/TextInputComponent";
 import CustomButton from "../../components/forms/CustomButton";
+import { useNavigation } from "@react-navigation/native";
 
 const BrandPromotionScreen = () => {
   const { colors } = useTheme();
+  const navigation = useNavigation();
   return (
     <SafeAreaView
       style={{

@@ -48,7 +48,7 @@ const EventOrganising = () => {
         />
         <CustomButton
           value={"Roadtrip vehicles"}
-          onClick={() => navigation.navigate("event")}
+          onClick={() => navigation.navigate("vehicles")}
           color={colors.background}
         />
       </View>
