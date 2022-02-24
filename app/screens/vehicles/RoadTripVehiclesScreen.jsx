@@ -5,6 +5,7 @@ import { Appbar, useTheme } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 import { vehicles } from "../../data/data";
 import SingleCard from "../../components/SingleCard";
+import FlatListComponent from "../../components/forms/FlatListComponent";
 
 const RoadTripVehiclesScreen = () => {
   const { colors } = useTheme();
@@ -21,24 +22,7 @@ const RoadTripVehiclesScreen = () => {
         <Appbar.Content title="Road Trip Vehicles" />
       </Appbar.Header>
       <View>
-        <FlatList
-          data={vehicles}
-          keyExtractor={(item) => item.id}
-          style={{
-            margin: 10,
-          }}
-          // render items in two rows
-          numColumns={2}
-          renderItem={({ item }) => (
-            <SingleCard
-              onPress={() => navigation.navigate("VehicleDetails", { item })}
-              name={item.name}
-              price={item.price}
-              status={item.status}
-              image={item.image}
-            />
-          )}
-        />
+        <FlatListComponent data={vehicles} navSreen={"VehicleDetails"} />
       </View>
     </SafeAreaView>
   );
