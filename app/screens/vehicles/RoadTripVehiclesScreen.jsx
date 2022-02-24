@@ -20,9 +20,7 @@ const RoadTripVehiclesScreen = () => {
         <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Appbar.Content title="Road Trip Vehicles" />
       </Appbar.Header>
-      <View
-      
-      >
+      <View>
         <FlatList
           data={vehicles}
           keyExtractor={(item) => item.id}
