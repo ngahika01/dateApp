@@ -2,7 +2,6 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StyleSheet } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import LOginScreen from "../screens/auth/LoginScreen";
 import HomeScreen from "../screens/HomeScreen";
 import BrandPromotion from "../screens/BrandPromotion";
 import EventOrganising from "../screens/events/EventOrganising";
@@ -10,6 +9,8 @@ import BrandPromotionScreen from "../screens/brands/BrandPromotionScreen";
 import RoadTripVehiclesScreen from "../screens/vehicles/RoadTripVehiclesScreen";
 import VehicleDetailsScreen from "../screens/vehicles/VehicleDetailsScreen";
 import PlaceOrderScreen from "../screens/order/PlaceOrderScreen";
+import SignUp from "../screens/auth/SignUp";
+import LoginScreen from "../screens/auth/LoginScreen";
 
 const Stack = createNativeStackNavigator();
 const FeedNavigator = () => {
@@ -17,6 +18,16 @@ const FeedNavigator = () => {
   return (
     <SafeAreaProvider>
       <Stack.Navigator>
+        <Stack.Screen
+          name="login"
+          options={{ headerShown: false }}
+          component={LoginScreen}
+        />
+        <Stack.Screen
+          name="signup"
+          options={{ headerShown: false }}
+          component={SignUp}
+        />
         <Stack.Screen
           name="home"
           options={{ headerShown: false }}
@@ -51,11 +62,6 @@ const FeedNavigator = () => {
           name="event"
           options={{ headerShown: false }}
           component={EventOrganising}
-        />
-        <Stack.Screen
-          name="login"
-          options={{ headerShown: false }}
-          component={LOginScreen}
         />
       </Stack.Navigator>
     </SafeAreaProvider>

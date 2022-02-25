@@ -5,12 +5,17 @@ import { Appbar, TextInput, useTheme } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 import { useFormikContext } from "formik";
 
-const TextInputComponent = ({ label }) => {
+const TextInputComponent = ({ label, keyboard, ...otherProps }) => {
   const { colors } = useTheme();
   const navigation = useNavigation();
   return (
     <View style={{ paddingBottom: 10 }}>
-      <TextInput label={label} mode="outlined" />
+      <TextInput
+        keyboardType={keyboard}
+        label={label}
+        mode="outlined"
+        {...otherProps}
+      />
     </View>
   );
 };

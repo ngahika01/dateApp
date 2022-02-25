@@ -22,11 +22,6 @@ const EventOrganising = () => {
       </Appbar>
       <View style={{ flex: 1, justifyContent: "center", padding: 10 }}>
         <CustomButton
-          value={"Brand promotion"}
-          onClick={() => navigation.navigate("brandPromotion")}
-          color={colors.background}
-        />
-        <CustomButton
           value={"Event organiser"}
           onClick={() => navigation.navigate("event")}
           color={colors.background}

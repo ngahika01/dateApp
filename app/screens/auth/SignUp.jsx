@@ -1,13 +1,13 @@
 import { StyleSheet, View, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Appbar, useTheme, Text } from "react-native-paper";
+import { Appbar, Text, useTheme } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 import TextInputComponent from "../../components/forms/TextInputComponent";
 import RadioButtonComponent from "../../components/forms/RadioButtonComponet";
 import CustomButton from "../../components/forms/CustomButton";
 
-const LoginScreen = () => {
+const SignUp = () => {
   const navigation = useNavigation();
   const { colors } = useTheme();
   return (
@@ -16,17 +16,16 @@ const LoginScreen = () => {
         <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Appbar.Content title="Sign Up" />
       </Appbar.Header>
-      <ScrollView
-        style={{ padding: 10 }}
-        contentContainerStyle={{
-          justifyContent: "center",
-          flex: 1,
-        }}
-      >
+      <ScrollView style={{ padding: 10 }}>
         <TextInputComponent label={"Name"} />
+        <TextInputComponent label={"Email"} />
+        <TextInputComponent label={"Phone Number"} keyboard="numeric" />
+        <RadioButtonComponent value={"male"} value2="female" />
+        <TextInputComponent label={"age"} keyboard="numeric" />
+        <TextInputComponent label={"location"} />
         <TextInputComponent label={"password"} secureTextEntry={true} />
-        <CustomButton value={"Sign in"} />
-        <TouchableOpacity onPress={() => navigation.navigate("signup")}>
+        <CustomButton value={"Sign Up"} />
+        <TouchableOpacity onPress={() => navigation.navigate("login")}>
           <Text style={{ textAlign: "center", marginTop: 10 }}>
             Already have an account?Login
           </Text>
@@ -36,6 +35,6 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default SignUp;
 
 const styles = StyleSheet.create({});
