@@ -33,7 +33,7 @@ const EventOrganising = () => {
         />
         <CustomButton
           value={"Request a party girl"}
-          onClick={() => navigation.navigate("event")}
+          onClick={() => navigation.navigate("party")}
           color={colors.background}
         />
         <CustomButton

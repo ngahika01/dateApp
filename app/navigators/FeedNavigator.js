@@ -13,6 +13,7 @@ import SignUp from "../screens/auth/SignUp";
 import LoginScreen from "../screens/auth/LoginScreen";
 import DJandMcList from "../screens/dj/DJandMcList";
 import DjDetails from "../screens/dj/DjDetails";
+import ListPartGirls from "../screens/partgirls/ListPartGirls";
 
 const Stack = createNativeStackNavigator();
 const FeedNavigator = () => {
@@ -75,6 +76,11 @@ const FeedNavigator = () => {
           name="event"
           options={{ headerShown: false }}
           component={EventOrganising}
+        />
+        <Stack.Screen
+          name="party"
+          options={{ headerShown: false }}
+          component={ListPartGirls}
         />
       </Stack.Navigator>
     </SafeAreaProvider>

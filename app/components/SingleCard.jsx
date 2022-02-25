@@ -26,6 +26,7 @@ const SingleCard = ({ onPress, name, price, status, image }) => {
         <Card.Cover
           style={{
             height: 150,
+            filter: "blur(0.5)",
           }}
           source={{ uri: image }}
         />
