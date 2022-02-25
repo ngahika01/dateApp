@@ -20,8 +20,8 @@ const FlatListComponent = ({ data, navSreen }) => {
           <SingleCard
             onPress={() => navigation.navigate(navSreen, { item })}
             name={item.name}
-            price={item.price}
-            status={item.status}
+            price={item.price || item.charges}
+            status={item.status || item.available}
             image={item.image}
           />
         )}

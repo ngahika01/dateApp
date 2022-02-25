@@ -11,6 +11,8 @@ import VehicleDetailsScreen from "../screens/vehicles/VehicleDetailsScreen";
 import PlaceOrderScreen from "../screens/order/PlaceOrderScreen";
 import SignUp from "../screens/auth/SignUp";
 import LoginScreen from "../screens/auth/LoginScreen";
+import DJandMcList from "../screens/dj/DJandMcList";
+import DjDetails from "../screens/dj/DjDetails";
 
 const Stack = createNativeStackNavigator();
 const FeedNavigator = () => {
@@ -58,6 +60,16 @@ const FeedNavigator = () => {
           name="brandPromotion"
           options={{ headerShown: false }}
           component={BrandPromotionScreen}
+        />
+        <Stack.Screen
+          name="dj"
+          options={{ headerShown: false }}
+          component={DJandMcList}
+        />
+        <Stack.Screen
+          name="djDetails"
+          options={{ headerShown: false }}
+          component={DjDetails}
         />
         <Stack.Screen
           name="event"
