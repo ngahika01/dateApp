@@ -83,7 +83,6 @@ export const dj = [
   },
 ];
 
-
 export const girls = [
   {
     id: 1,
@@ -157,5 +156,40 @@ export const girls = [
       "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
     price: "ksh 550 per day",
+  },
+];
+
+export const sound = [
+  {
+    id: 1,
+    name: "PA sound systems",
+    image:
+      "https://dt7v1i9vyp3mf.cloudfront.net/styles/news_preview/s3/imagelibrary/C/ChoosingPA_01-IFpy_JEBC4sPCAbjifaPw3K3psyMPEJD.jpg",
+    price: "Ksh 10000",
+    available: true,
+  },
+  {
+    id: 2,
+    name: "PA sound systems",
+    image:
+      "https://dt7v1i9vyp3mf.cloudfront.net/styles/news_preview/s3/imagelibrary/C/ChoosingPA_01-IFpy_JEBC4sPCAbjifaPw3K3psyMPEJD.jpg",
+    price: "Ksh 10000",
+    available: true,
+  },
+  {
+    id: 3,
+    name: "PA sound systems",
+    image:
+      "https://dt7v1i9vyp3mf.cloudfront.net/styles/news_preview/s3/imagelibrary/C/ChoosingPA_01-IFpy_JEBC4sPCAbjifaPw3K3psyMPEJD.jpg",
+    price: "Ksh 10000",
+    available: true,
+  },
+  {
+    id: 4,
+    name: "PA sound systems",
+    image:
+      "https://dt7v1i9vyp3mf.cloudfront.net/styles/news_preview/s3/imagelibrary/C/ChoosingPA_01-IFpy_JEBC4sPCAbjifaPw3K3psyMPEJD.jpg",
+    price: "Ksh 10000",
+    available: true,
   },
 ];

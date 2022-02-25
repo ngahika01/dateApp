@@ -21,14 +21,10 @@ const EventOrganising = () => {
         <Appbar.Content title="Event organising" />
       </Appbar>
       <View style={{ flex: 1, justifyContent: "center", padding: 10 }}>
-        <CustomButton
-          value={"Event organiser"}
-          onClick={() => navigation.navigate("event")}
-          color={colors.background}
-        />
+       
         <CustomButton
           value={"Sound system"}
-          onClick={() => navigation.navigate("event")}
+          onClick={() => navigation.navigate("sound")}
           color={colors.background}
         />
         <CustomButton
