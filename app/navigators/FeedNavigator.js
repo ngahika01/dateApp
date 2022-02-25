@@ -17,7 +17,12 @@ const FeedNavigator = () => {
   const user = null;
   return (
     <SafeAreaProvider>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="home">
+        <Stack.Screen
+          name="home"
+          options={{ headerShown: false }}
+          component={HomeScreen}
+        />
         <Stack.Screen
           name="login"
           options={{ headerShown: false }}
@@ -28,11 +33,7 @@ const FeedNavigator = () => {
           options={{ headerShown: false }}
           component={SignUp}
         />
-        <Stack.Screen
-          name="home"
-          options={{ headerShown: false }}
-          component={HomeScreen}
-        />
+
         <Stack.Screen
           name="brand"
           options={{ headerShown: false }}

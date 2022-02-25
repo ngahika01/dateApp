@@ -1,7 +1,7 @@
 import { StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Button, Text, useTheme } from "react-native-paper";
+import {  Button, Text, useTheme } from "react-native-paper";
 import CustomButton from "../components/forms/CustomButton";
 import { useNavigation } from "@react-navigation/native";
 
@@ -18,6 +18,8 @@ const HomeScreen = () => {
         justifyContent: "center",
       }}
     >
+      
+
       <CustomButton
         value={"Event and Promotion"}
         color={colors.background}
