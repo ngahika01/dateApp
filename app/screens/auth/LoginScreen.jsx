@@ -6,6 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import TextInputComponent from "../../components/forms/TextInputComponent";
 import RadioButtonComponent from "../../components/forms/RadioButtonComponet";
 import CustomButton from "../../components/forms/CustomButton";
+import { StatusBar } from "expo-status-bar";
 
 const LoginScreen = () => {
   const navigation = useNavigation();
@@ -14,8 +15,9 @@ const LoginScreen = () => {
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
       <Appbar.Header>
         <Appbar.BackAction onPress={() => navigation.goBack()} />
-        <Appbar.Content title="Sign Up" />
+        <Appbar.Content title="Sign In" />
       </Appbar.Header>
+      <StatusBar style="dark" />
       <ScrollView
         style={{ padding: 10 }}
         contentContainerStyle={{
@@ -24,7 +26,7 @@ const LoginScreen = () => {
         }}
       >
         <TextInputComponent label={"Name"} />
-        <TextInputComponent label={"password"} secureTextEntry={true} />
+        <TextInputComponent label={"password"} secure />
         <CustomButton value={"Sign in"} />
         <TouchableOpacity onPress={() => navigation.navigate("signup")}>
           <Text style={{ textAlign: "center", marginTop: 10 }}>

@@ -86,7 +86,7 @@ export const dj = [
 export const girls = [
   {
     id: 1,
-    name: "Betty 1",
+    name: "Regina name",
     image:
       "https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -106,7 +106,7 @@ export const girls = [
   {
     id: 3,
 
-    name: "Betty 3",
+    name: " Nancy wenu",
     image:
       "https://images.pexels.com/photos/1116380/pexels-photo-1116380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -115,7 +115,7 @@ export const girls = [
   {
     id: 4,
 
-    name: "Betty b",
+    name: "Monicah Pavlov",
     image:
       "https://images.pexels.com/photos/1308885/pexels-photo-1308885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -125,7 +125,7 @@ export const girls = [
   {
     id: 4,
 
-    name: "Betty b",
+    name: "Russian mafia",
     image:
       "https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -134,7 +134,7 @@ export const girls = [
   {
     id: 5,
 
-    name: "Betty b",
+    name: "Name of the",
     image:
       "https://images.pexels.com/photos/1391499/pexels-photo-1391499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -143,7 +143,7 @@ export const girls = [
   {
     id: 6,
 
-    name: "Betty b",
+    name: "Susan watula",
     image:
       "https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",
@@ -151,7 +151,7 @@ export const girls = [
   },
   {
     id: 7,
-    name: "Betty b",
+    name: "final name",
     image:
       "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     location: "Juja",

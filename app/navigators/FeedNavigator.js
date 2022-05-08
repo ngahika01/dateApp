@@ -16,6 +16,7 @@ import DjDetails from "../screens/dj/DjDetails";
 import ListPartGirls from "../screens/partgirls/ListPartGirls";
 import ListSoundSystemsScreen from "../screens/sound/ListSoundSystemsScreen";
 import SoundDetailsScreen from "../screens/sound/SoundDetailsScreen";
+import PremiumNavigator from "./PremiumNavigator";
 
 const Stack = createNativeStackNavigator();
 const FeedNavigator = () => {
@@ -94,6 +95,12 @@ const FeedNavigator = () => {
           options={{ headerShown: false }}
           component={SoundDetailsScreen}
         />
+        <Stack.Screen
+          name="premium"
+          options={{ headerShown: false }}
+          component={PremiumNavigator}
+        />
+
       </Stack.Navigator>
     </SafeAreaProvider>
   );
